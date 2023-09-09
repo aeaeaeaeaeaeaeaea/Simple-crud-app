@@ -108,7 +108,7 @@ public class BuyerController {
 
 		// Размер массива для определения количества страниц для пагинации
 		// The size of the array to determine the number of pages for pagination
-		model.addAttribute("size", winterTaskService.findAll().size());
+		model.addAttribute("size", buyerService.findAll().size());
 
 		return "buyer/buyers";
 	}
